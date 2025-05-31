@@ -1,0 +1,113 @@
+/*
+Seletor de tags
+HTML <h1>Lista de Pessoas</h1>
+CSS h1 {...}
+
+Seletor de id
+HTML <h1 id="lista">Lista de pessoas</h1>
+CSS #lista {...}
+
+Seletor de classe
+HTML <h1 class="lista>Lista de Pessoas</h1>
+CSS .lista {...}
+*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: #fff;
+    background-color: #1f1f2e;
+}
+
+.caixa{
+    background-color: #f2c6ef;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+   
+}
+.borda-superior{
+    border-top-color: #000000;
+    border-top-style: solid;
+    border-top-width: 2px;
+    
+}
+.borda-direita{
+    border-right-color: #520aa9;
+    border-right-style: solid;
+    border-right-width: 3px;
+}
+.borda-base{
+    border-bottom-color: #067b52;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+}
+.borda-esquerda{
+    border-left-color: #c02cc2;
+    border-left-style: solid;
+    border-left-width: 1px;
+    
+}
+p{
+    background-color: #2cc28d;
+    border-top:#000000 dashed 2px;
+    border-right: #d4ff00 dashed 2px;
+    border-bottom: #ff0044 dashed 2px;
+    border-left: #4669f4 dashed 2px;
+    
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+section{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.caixa-alternativa{
+    width: 200px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    background-color: #2a2a3b;
+
+
+}
+.border-solid{
+    /* border-top: 4px solid #4CAF50;
+    border-right: 4px solid #4CAF50;
+    border-bottom: 4px solid #4CAF50;
+    border-left: 4px solid #4CAF50; */
+    border:4px solid #4caf50;
+}
+.border-dashed{
+    border: 4px dashed #FF9800;
+}
+.border-dotted{
+    border: 4px dotted #03A9F4;
+}
+.border-double{
+    border:6px double #E91E63;
+}
+.border-groove{
+    border: 6px groove #9C27B0;
+}
+.border-ridge{
+    border:6px ridge #673AB7;
+}
+.border-inset{
+    border: 6px inset #3F51B5;
+}
+.border-outset{
+    border: 6px outset #009688;
+}
+.border-none{
+    border: none; background-color: #33333A;
+}
+.border-hidden{
+    border:hidden; background-color: #55556A;
+}
