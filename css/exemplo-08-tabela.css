@@ -1,0 +1,107 @@
+.banner{
+    /* Definir imagem de fundo a ser exibida */
+    background-image: url('https://picsum.photos/id/1018/1200/300');
+
+    /* centraliza a imagem de fundo no elemento */
+    background-position: center;
+
+    /* faz com que a imagem cubra todo o elemento, mantendo a proporção */
+    background-size: cover;
+
+    /* Impede que a imagem se repita (nem na horizontal, nem na vertical */
+    background-repeat: no-repeat;
+
+    /* Usa o valor padrão, que é scroll, fazendo o fundo rolar com a pagina */
+    background-attachment: initial;
+
+    /* Usa o valor padrão que é 'padding-box' a imagem inicia a partir da area de padding */
+    background-origin: initial;
+
+    /* Usa o valor padrão, que é 'border-box', a imagem de fundo se estende até a borda */
+    background-clip: initial;
+
+    background: url('https://picsum.photos/id/1018/1200/300') center/cover no-repeat;
+
+    height: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+}
+.banner h1{
+    font-size: 2.5rem;
+}
+.detalhes{
+    display:flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.detalhe{
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50%{
+        transform: translateY(-5px) scale(1.05);
+    }
+    100%{
+        transform: translateY(0) scale(1);
+    }
+}
+.detalhe:hover{
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.opcoes{
+    background-color: #fff;
+    max-width:  800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    overflow-x: auto;
+}
+
+.opcoes h2{
+    margin-bottom: 15px;
+    color: #3a72a9;
+    text-align: center;
+}
+.opcoes table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.opcoes th,
+.opcoes td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.opcoes th{
+    background-color: #3c85ce;
+    color: #fff;
+}
+.opcoes tr:nth-child(even){
+    background-color: #fff;
+
+}
+.opcoes tr:hover{
+    background-color: #b0bff0c8;
+
+}
